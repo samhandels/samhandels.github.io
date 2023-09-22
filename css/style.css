@@ -6,12 +6,12 @@
  * Version: 2.2.5
  * Initial Release: November 22, 2022
  * Last Update: April 20, 2023
- * 
+ *
  */
-/* 
+/*
 
 ====================
-  Table of Contents 
+  Table of Contents
 ====================
 
 1. Variables
@@ -21,8 +21,8 @@
 5. Hero Area
 6. Intro Section
 7. About Section
-8. Skill Section 
-9. Portfolio Section 
+8. Skill Section
+9. Portfolio Section
 10. Service Section
 11. Features Section
 12. Testimonial Section
@@ -35,11 +35,11 @@
 
  */
 /***********************************************************
-  1. Variables 
+  1. Variables
 ************************************************************/
 /* brand colors */
 /***********************************************************
-  2. Common Styles 
+  2. Common Styles
 ************************************************************/
 .section-title {
   width: 50%;
@@ -202,7 +202,7 @@
   animation: anim-zoom 5s infinite;
 }
 /***********************************************************
-  3. General Style 
+  3. General Style
 ************************************************************/
 body {
   font-family: 'Open Sans', sans-serif;
@@ -486,7 +486,7 @@ h6 {
   background: #2f2f2f;
 }
 /***********************************************************
-  6. Intro Section  
+  6. Intro Section
 ************************************************************/
 .intro-section {
   position: relative;
@@ -537,7 +537,7 @@ h6 {
   border: none;
 }
 /***********************************************************
-  7. About Section 
+  7. About Section
 ************************************************************/
 .about-section {
   padding-bottom: 80px;
@@ -572,8 +572,51 @@ h6 {
 .about-section .about-img-2 {
   position: absolute;
   left: 0;
-  bottom: -200px;
+  /* bottom: -200px; */
 }
+
+.icon-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  font-size: 34px;
+  gap:2rem;
+  height:fit-content;
+  min-width: 41rem;
+}
+
+.icon-text {
+  color: white;
+}
+
+.icon-row i {
+  width: 44px;
+  height: 48px;
+}
+
+.flask-logo-icon {
+  height: 34.5px;
+  width: 25.5px;
+  background-color: rgb(97,89,120);
+  border-radius: 5px;
+}
+
+.sam-logo {
+  display: flex;
+  max-width: 12rem;
+  align-items: center;
+}
+
+.footer-logo {
+  min-width: 30rem;
+}
+
+.footer-logos a{
+  display: flex;
+  flex-direction: column;
+  min-width: 10rem;
+}
+
 .about-section .content-block h2 {
   font-size: 48px;
   margin-bottom: 30px;
@@ -1412,7 +1455,7 @@ h6 {
   border: none;
 }
 /***********************************************************
-  14. Partner Section  
+  14. Partner Section
 ************************************************************/
 .partner-section {
   padding-top: 90px;
@@ -1515,7 +1558,7 @@ h6 {
   left: 2%;
 }
 /***********************************************************
-  16. Site Footer 
+  16. Site Footer
 ************************************************************/
 .site-footer {
   background-color: #333;
@@ -1687,7 +1730,7 @@ h6 {
   width: 100%;
 }
 /***********************************************************
-  18. Media Queries 
+  18. Media Queries
 ************************************************************/
 /* max-width: 1599px and min-width:992px */
 @media (max-width: 1599px) and (min-width: 992px) {
