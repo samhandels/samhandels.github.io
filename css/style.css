@@ -564,7 +564,7 @@ h6 {
 .about-section .img-wrapper:after {
   width: 36px;
   height: 36px;
-  background: #fd562a;
+  /* background: #fd562a; */
   left: 332px;
   bottom: -90px;
   border-radius: 4px;
