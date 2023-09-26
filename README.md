@@ -1,4 +1,5 @@
 # samhandels.github.io
+# samhandels.github.io
 
 - 🔭 I’m currently working on polishing up my project "Samazon"
 - 🤔 I’m looking for help with learning more about the CS Job market and potential positions in the field
