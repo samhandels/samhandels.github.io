@@ -1,8 +1,8 @@
-(function($) { 
+(function($) {
 "use strict";
 
-/*================================================================= 
-    pre loader 
+/*=================================================================
+    pre loader
 ==================================================================*/
 $('.js-preloader').preloadinator({
   animation: 'fadeOut',
@@ -11,8 +11,8 @@ $('.js-preloader').preloadinator({
 
 
 
-/*================================================================= 
-    Isotope initialization 
+/*=================================================================
+    Isotope initialization
 ==================================================================*/
 var $grid = $('.grid').isotope({
   // options
@@ -20,7 +20,7 @@ var $grid = $('.grid').isotope({
 // layout Isotope after each image loads
 $grid.imagesLoaded().progress( function() {
   $grid.isotope('layout');
-}); 
+});
 
 // filter items on button click
 $('.filter-button-group').on( 'click', 'button', function() {
@@ -48,7 +48,7 @@ event.target.classList.add('active');
 }
 
 
-/*================================================================= 
+/*=================================================================
     Testimonial carousel
 ==================================================================*/
 const swiper = new Swiper('.swiper', {
@@ -58,7 +58,7 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 3,
     },
     992:{
-      slidesPerView: 2, 
+      slidesPerView: 2,
     },
     576:{
       slidesPerView: 1
@@ -70,7 +70,7 @@ const swiper = new Swiper('.swiper', {
   autoplay: {
      delay: 5000,
    },
-   
+
 
   // If we need pagination
   pagination: {
@@ -81,7 +81,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-/*================================================================= 
+/*=================================================================
     Partner carousel
 ==================================================================*/
 const swiper2 = new Swiper('.partnerCarousel', {
@@ -91,7 +91,7 @@ const swiper2 = new Swiper('.partnerCarousel', {
       slidesPerView: 6,
     },
     992:{
-      slidesPerView: 4, 
+      slidesPerView: 4,
     },
     576:{
       slidesPerView: 3
@@ -110,10 +110,10 @@ const swiper2 = new Swiper('.partnerCarousel', {
 });
 
 
-/*================================================================= 
+/*=================================================================
     Map
 ==================================================================*/
-var map = L.map('mapwrapper').setView([-37.817160, 144.955937], 12);
+var map = L.map('mapwrapper').setView([34.052235, -118.243683], 12);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -126,11 +126,11 @@ var greenIcon = L.icon({
     iconSize:     [48, 48], // size of the icon
 });
 
-L.marker([-37.817160, 144.955937], {icon: greenIcon}).addTo(map);
+L.marker([34.052235, -118.243683], {icon: greenIcon}).addTo(map);
 
 
 
-/*================================================================= 
+/*=================================================================
     Navbar fixed top
 ==================================================================*/
 
@@ -142,10 +142,10 @@ $(document).ready(function () {
     function scroll() {
         if ($(window).width() < 1200 && $(window).scrollTop() >= origOffsetY) {
             $('.site-header nav').addClass('fixed-top');
-            
+
         } else {
             $('.site-header nav').removeClass('fixed-top');
-           
+
         }
     }
 
@@ -154,8 +154,8 @@ $(document).ready(function () {
 });
 
 
-/*================================================================= 
-    Contact form 
+/*=================================================================
+    Contact form
 ==================================================================*/
 $(function() {
     // Here is the form
@@ -169,7 +169,7 @@ $(function() {
   $(form).submit(function(event) {
       // Stopping the browser to submit the form
       event.preventDefault();
-      
+
       // Serializing the form data
     var formData = $(form).serialize();
 
@@ -179,7 +179,7 @@ $(function() {
         url: $(form).attr('action'),
         data: formData
     }).done(function(response) {
-      
+
         // Making the formMessages div to have the 'success' class
         $(formMessages).removeClass('error');
         $(formMessages).addClass('success');
@@ -187,13 +187,13 @@ $(function() {
         // Setting the message text
         $(formMessages).text(response);
 
-        // Clearing the form after successful submission 
+        // Clearing the form after successful submission
         $('#inputName').val('');
         $('#inputEmail').val('');
         $('#inputPhone').val('');
         $('#inputMessage').val('');
     }).fail(function(data) {
-      
+
         // Making the formMessages div to have the 'error' class
         $(formMessages).removeClass('success');
         $(formMessages).addClass('error');
@@ -210,7 +210,7 @@ $(function() {
 
 });
 
-/*================================================================= 
+/*=================================================================
     Animating numbers
 ==================================================================*/
 $('.counter').counterUp({
@@ -219,7 +219,7 @@ $('.counter').counterUp({
 });
 
 
-/*================================================================= 
+/*=================================================================
     Progress bar animation
 ==================================================================*/
 var waypoint = new Waypoint({
@@ -234,7 +234,7 @@ var waypoint = new Waypoint({
 })
 
 
-/*================================================================= 
+/*=================================================================
     Animate on scroll initialization
 ==================================================================*/
 AOS.init({
@@ -242,4 +242,3 @@ AOS.init({
 });
 
 })(jQuery);
-
