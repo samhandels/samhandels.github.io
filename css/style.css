@@ -605,6 +605,8 @@ h6 {
   display: flex;
   max-width: 10rem;
   align-items: center;
+  position: relative;
+  right: 1rem;
 }
 
 .footer-logo {
