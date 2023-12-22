@@ -2007,7 +2007,7 @@ h6 {
     position: fixed;
   }
   .has-sidebar .site-header .navbar-brand {
-    padding-left: 1.2rem;
+    /* padding-left: 1.2rem; */
     padding-right: 1.2rem;
   }
   .has-sidebar .site-header .collapse {
